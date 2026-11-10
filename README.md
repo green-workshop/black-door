@@ -34,6 +34,39 @@ Checkpoints are saved at each stage. Cars, fuel drums, windows, street lamps, ch
 | Look sensitivity | `[` `]` |
 | Pause (then quit to menu) | `Esc` |
 
+## How it was made
+
+This game is a demo of what a single prompt can produce. It was built by Claude Fable 5.2 (Anthropic), working in Claude Code, in one session. All the code in this repository was written by the model.
+
+The opening prompt, verbatim:
+
+> I'd like you to create a first person shooter based on Call Of Duty.  So i want game play and artwork to be very close to it.\
+> I only want one level. the level and story behind it is as follows:\
+> the user is assigned to protect the PM and 10 downing street.\
+> the user is part of a team of 4 SAS. a threat is anticipated, a militia who intend perform a coup.  it's the users job to protect the PM from the threat.  Use street as well and the inside of the building as playable world. destruction of certain element is encouraged.\
+> If this could be a single page app the better, but the game itself is priority.\
+> Do you understand or have any questions?
+
+The model replied with a short plan and five questions, each with a suggested default:
+
+1. Single file or small folder? (A single file loading Three.js from a CDN needs an internet connection.)
+2. Length and difficulty? (About 10–15 minutes, moderate, with checkpoints.)
+3. Weapons? (Assault rifle, sidearm, grenades, and enemy weapons to pick up.)
+4. Time of day? (Dusk or night with rain.)
+5. Sound? (Synthesised effects, with subtitles instead of voice acting.)
+
+The answer, verbatim:
+
+> 1, internet connection is assumed.\
+> 2) that's fine\
+> 3) sounds great\
+> 4) yep go with what you feel best\
+> 5) please
+>
+> go
+
+That exchange produced the playable game. Three short follow-ups came afterwards: a way to quit to the menu, the trackpad and keyboard-only controls, and publishing it here.
+
 ## Notes
 
 - All graphics and sound are generated in code; there are no asset files.
